@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>こんにちは</title>
+  </head>
+  <body>
+    <p>履歴見てみ？</p>
+    <script>
+      (async() => {
+        while(1) history.pushState(null, null, "index.html?q=" + Math.random().toString(2));
+      })();
+      setTimeout(() => location.reload(), 1000);
+    </script>
+  </body>
+</html>
